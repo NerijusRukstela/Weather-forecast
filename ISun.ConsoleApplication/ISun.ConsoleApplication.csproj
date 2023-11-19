@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
+      <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="7.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Http" Version="7.0.0" />
+      <PackageReference Include="NLog.Extensions.Logging" Version="5.3.5" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\ISun.Application\ISun.Application.csproj" />
+      <ProjectReference Include="..\ISun.Domain\ISun.Domain.csproj" />
+      <ProjectReference Include="..\ISun.Infrastructure\ISun.Infrastructure.csproj" />
+    </ItemGroup>
+
+</Project>
